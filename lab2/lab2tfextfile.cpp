@@ -5,6 +5,7 @@ int main() {
 	ofstream seoul("pusan.txt");
 	if (!seoul) {
 		cout << " cant open pusan.txt\n";
+		return 666;
 	}
 	int age;
 	float height, weight;
