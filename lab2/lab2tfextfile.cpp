@@ -12,8 +12,8 @@ int main() {
 	height = 172.0;
 	weight = 70.5;
 	seoul << age << " years old\n";
-	seoul << height << "cm\n";
-	seoul << weight << "kg\n";
+	seoul << height << " cm\n";
+	seoul << weight << " kg\n";
 	seoul.close();
 	return 1;
 }
