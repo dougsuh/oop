@@ -1,14 +1,13 @@
 #include <iostream>
 using namespace std;
 void main() {
-	// 2. size
-	cout <<  " int size " << sizeof(int) << endl;
-	cout << " short size " << sizeof(short) << endl;
-	cout << " unsigned short size " << sizeof(unsigned short) << endl;
-	cout << " long size " << sizeof(long) << endl;
-	// 1. hex
-	for (short c = 0; c<16; c++)
-		cout << dec << c << "  0x" << hex << c
-		<< "  o" << oct << c  << endl;
-	getchar();
+	int a = 2, b=6, c=5;
+	int d = (a<<6) | (b<<3) | c;
+	cout << oct << a << " " << b << " " << c << endl;
+	cout << d << endl;
+	a = b = c = 0;
+	a = (d & 0300) >> 6;
+	b = (d & 070) >> 3;
+	c = d & 7;
+	cout << oct << a << " " << b << " " << c << endl;
 }
