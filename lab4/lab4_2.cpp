@@ -16,7 +16,7 @@ void main() {
 	yy2.open("ab.bin", ios::binary | ios::in);
 	yy2.read((char *)xx, 36); // 36 bytes
 	for (int i = 0; i < 18; i+=2)
-		cout << "  " << i <<  "   " << hex << xx[i] << " " << hex << xx[i+1] << endl;
+		cout << hex << "  " << i <<  "   " << xx[i] << " " << xx[i+1] << endl;
 	yy2.close();
 }
 
