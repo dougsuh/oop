@@ -22,6 +22,5 @@ void main() {
 	yy2.write((char*)&s1, sizeof(myS)); // 12 bytes
 	yy2.write((char*)ss, sizeof(myS)*2); // 24 bytes
 	yy2.close();
-	getchar();
 }
 
