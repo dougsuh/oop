@@ -18,6 +18,5 @@ void main() {
 	for (int i = 0; i < 18; i+=2)
 		cout << "  " << i <<  "   " << hex << xx[i] << " " << hex << xx[i+1] << endl;
 	yy2.close();
-	getchar();
 }
 
