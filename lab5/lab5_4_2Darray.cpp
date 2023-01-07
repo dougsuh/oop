@@ -15,6 +15,4 @@ void main() {
 	cout << sum(data, 5) << "\n";
 	cout << sum(data + 1, 4) << "\n";
 	cout << sum(data + 2, 2) << "\n";
-
-	getchar();
 }
