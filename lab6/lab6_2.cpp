@@ -13,5 +13,4 @@ void main() {
 		cout << "   " << n * (n + 1) / 2;
 		cout << "       " << sum << endl;
 	}*/
-	getchar();
 }
