@@ -9,6 +9,4 @@ void main() {
 
 	// conditional operator
 	c = a > b ? a : b;  // c=a if a>b, else c=b.
-	
-	getchar();
 }
