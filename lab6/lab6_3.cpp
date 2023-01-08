@@ -9,5 +9,4 @@ void main() {
 		cout << x << "  " << f1 << "  " << f2 << endl;
 		if (f1 < f2) break;
 	}
-	getchar();
 }
