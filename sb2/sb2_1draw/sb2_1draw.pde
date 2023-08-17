@@ -1,16 +1,18 @@
-float x,y=0;
+float ax,ay,ad;
 void setup(){
-  size(600,400);
-  x = 150;
-  kyunghee();
+  size(600,300);
+  ax = 100;
+  ay = 100;
+  ad = 10;
 }
 void draw(){
   background(120);
-  y++;
-  kyunghee();
+  ay++;                                   
+  Life(ax,ay,ad);
 }
-void kyunghee(){
-  circle(x,y,150);
-  circle(x-30,y-20,50);
-  circle(x+30,y-20,50);
+void Life(float x,float y, float d){
+  ellipse(x,y,d*10,d*6);
+  circle(x-d*2,y-d*1.5,d*2);
+  arc(x+d*2,y-d*1.5,d*2,d*2,PI,2*PI);
+  arc(x,y,d*6,d*2,0,PI);  
 }
