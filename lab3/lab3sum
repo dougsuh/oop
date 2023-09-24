@@ -12,5 +12,4 @@ sum[5] = 1;        //   *(sum + 5) = 1;
 root[6] = 0.0;    //   *(root + 6) = 0.0;
 for (int i = 0; i < 10; i++)
 	cout << sum[i] << "   " << root[i] << endl;
-getchar();
 }
