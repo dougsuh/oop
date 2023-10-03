@@ -12,7 +12,7 @@ int Chk(string str) {
     for (it = str.begin(); it != str.end(); it++,i--){
         char c = *it;
         ii = (int)(c - '0');
-        cout << *it << " " << ii << " " << i<< endl;
+        // cout << *it << " " << ii << " " << i<< endl; for debugging
         if(c <'0' || c >'9') throw c;
         num += (int)(pow(10.0,i)*ii);
     }
