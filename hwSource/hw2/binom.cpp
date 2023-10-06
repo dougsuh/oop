@@ -12,7 +12,7 @@ int main() {
 	for (k = 0; k <= n; k++) biex[k] = 0;
 	for (int nn = 0; nn < N; nn++) {
 		count = 0;
-		for (int j = 0; j < 10; j++) if ((rand() / (float)RAND_MAX) < p) count++;
+		for (int j = 0; j < n; j++) if ((rand() / (float)RAND_MAX) < p) count++;
 		biex[count]++;
 	} // nn
 	for (int k = 0; k <= n; k++) biex[k] /= (float)N; // count --> probability
