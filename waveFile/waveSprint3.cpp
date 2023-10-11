@@ -8,15 +8,17 @@ int main() {
 	char header[44];
 	// Sprint 1
 	xx.read(header, 44);
+	xx.close();
 	int* sampleRate = (int*)(header + 24);
 	cout << "   sampleRate = " << *sampleRate << endl;
 	short* n;   n = (short*)(header + 22);  cout << *n << endl; // numChannels
 	int* fs;   fs = (int*)(header + 24);  cout << *fs << endl; // sampleRate
 	int* b;   b = (int*)(header + 28);  cout << *b << endl;  //  byteRate
+	*n = 1;  // mono
 	// Sprint 3
 	int N = fs[0]; // number of samples for 1 second
 	short* data;
-	data = new short[N]; // allocate memory for 10 seconds mono
+	data = new short[N]; // allocate memory for 1 seconds mono
 	const float pi = 3.141592;
 	float dt = 1. / fs[0], a = 10000.0, f;
 	int i = 0;	
