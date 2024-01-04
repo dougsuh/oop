@@ -13,5 +13,4 @@ void main() {
 		doug << t << "    " << sin(2.*PI * 440 * t) << endl;
 	}
 	doug.close();
-	getchar();
 }
