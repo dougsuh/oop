@@ -12,7 +12,6 @@ void main() {
 	for (int i = 0; i < 5; i++)
 		cout << man[i] << "  " << area[i] << endl;
 	yyy.close();
-	getchar();
 	/*man[0] = 50230; area[0] = 220000.0;
 	man[1] = 10030; area[1] = 100100.0;
 	man[2] = 6005 ; area[2] = 90232.0;
