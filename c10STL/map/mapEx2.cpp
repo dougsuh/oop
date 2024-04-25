@@ -4,7 +4,7 @@
 #include <map>
 
 int main() {
-    //  std::map : stores (student number, store) as (key, value)
+    //  std::map : stores (student number, score) as (key, value)
     std::map<int, int> studentScores;
 
     // input of (student name, score) pairs
