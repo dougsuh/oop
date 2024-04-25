@@ -13,27 +13,27 @@ int main() {
     studentScores["Bob"] = 87;
     studentScores["Charlie"] = 92;
 
-    // "Bob"을 찾고 반복자를 얻음
+    // Find "Bob" and get its iterator
     std::map<std::string, int>::iterator it = studentScores.find("Bob");
 
-    // "Bob"을 제거
+    // Remove "Bob"
     if (it != studentScores.end()) {
         studentScores.erase(it);
     }
 
-    // "Bob"이 더 이상 없음
+    // "Bob" does not exist. 
     if (studentScores.find("Bob") == studentScores.end()) {
-        std::cout << "Bob은 더 이상 존재하지 않습니다." << std::endl;
+        std::cout << "Bob does not exist." << std::endl;
     }
-    addSuh(studentScores,100);  // ignored
-    addSuh(studentScores,50);
-    // 모든 키-값 쌍 순회
-    std::cout << "모든 학생의 성적:" << std::endl;
+    addSuh(studentScores,"Suh", 100);  
+    addSuh(studentScores,"Doug", 50);
+    // visit all pairs
+    std::cout << " scores of all students:" << std::endl;
     for (const auto& pair : studentScores) {
         std::cout << pair.first << ": " << pair.second << std::endl;
     }
     return 0;
 }
-void addSuh(std::map<std::string, int>& ss,int v) {
-    ss["Doug"] = v;
+void addSuh(std::map<std::string, int>& ss,string sss,int v) {
+    ss[sss] = v;
 }
