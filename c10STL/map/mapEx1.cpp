@@ -5,36 +5,36 @@
 #include <map>
 
 int main() {
-    // std::map 선언: 문자열 키와 정수 값의 연관 관계를 저장
+    // std::map : stores (student names, store) as (key, value)
     std::map<std::string, int> studentScores;
 
-    // 키-값 쌍 추가
+    // input of (student name, score) pairs
     studentScores["Bob"] = 87;
     studentScores["Charlie"] = 92;
     studentScores["David"] = 78;
     studentScores["Eve"] = 88;
     studentScores["Alice"] = 95;
 
-    // 키를 사용하여 값을 검색
+    // find a value by using a key
     std::string studentName = "Bob";
     if (studentScores.find(studentName) != studentScores.end()) {
-        std::cout << studentName << "의 점수: " << studentScores[studentName] << std::endl;
+        std::cout << studentName << " score : " << studentScores[studentName] << std::endl;
     }
     else {
-        std::cout << studentName << "의 점수를 찾을 수 없습니다." << std::endl;
+        std::cout << studentName << " can not be found.." << std::endl;
     }
-    // 항목을 제거 : "Bob"을 제거
+    // remove a pair : "Bob" is to be removed
     studentScores.erase("Bob");
     studentName = "Bob";
     if (studentScores.find(studentName) != studentScores.end()) {
-        std::cout << studentName << "의 점수: " << studentScores[studentName] << std::endl;
+        std::cout << studentName << " score: " << studentScores[studentName] << std::endl;
     }
     else {
-        std::cout << studentName << "의 점수를 찾을 수 없습니다." << std::endl;
+        std::cout << studentName << " can not be found." << std::endl;
     }
 
-    // 모든 키-값 쌍 순회
-    std::cout << "모든 학생의 성적:" << std::endl;
+    // visit all pairs
+    std::cout << " scores of all students:" << std::endl;
     for (const auto& pair : studentScores) {
         std::cout << pair.first << ": " << pair.second << std::endl;
     }
